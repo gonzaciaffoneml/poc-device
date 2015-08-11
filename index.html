@@ -21,31 +21,9 @@
   <script src="js/platform.js"></script>
   <script>
     // on IE10 x86 document.write("<p>"+platform preview running in IE7 compatibility mode on Windows 7 64 bit edition
-document.write("<p>"+platform.name+"</p>"); // 'IE'
-document.write("<p>"+platform.version+"</p>"); // '10.0'
-document.write("<p>"+platform.layout+"</p>"); // 'Trident'
-document.write("<p>"+platform.os+"</p>"); // 'Windows Server 2008 R2 / 7 x64'
-document.write("<p>"+platform.description+"</p>"); // 'IE 10.0 x86 (document.write("<p>"+platform preview; running in IE 7 mode) on Windows Server 2008 R2 / 7 x64'
-
-// or on an iPad
-document.write("<p>"+platform.name+"</p>"); // 'Safari'
-document.write("<p>"+platform.version+"</p>"); // '5.1'
-document.write("<p>"+platform.product+"</p>"); // 'iPad'
-document.write("<p>"+platform.manufacturer+"</p>"); // 'Apple'
-document.write("<p>"+platform.layout+"</p>"); // 'WebKit'
-document.write("<p>"+platform.os+"</p>"); // 'iOS 5.0'
-document.write("<p>"+platform.description+"</p>"); // 'Safari 5.1 on Apple iPad (iOS 5.0)'
-
-// or parsing a given UA string
-var info = platform.parse('Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7.2; en; rv:2.0) Gecko/20100101 Firefox/4.0 Opera 11.52'+"</p>");
-document.write("<p>"+info.name+"</p>"); // 'Opera'
-document.write("<p>"+info.version+"</p>"); // '11.52'
-document.write("<p>"+info.layout+"</p>"); // 'Presto'
-document.write("<p>"+info.os+"</p>"); // 'Mac OS X 10.7.2'
-document.write("<p>"+info.description+"</p>");
-document.write("<p>"+navigator.userAgent+"</p>");
-
-document.write("<p>"+platform.name+"</p>"+"</p>");
+document.write("<p>"+WURFL.is_mobile+"</p>"); // 'IE'
+document.write("<p>"+WURFL.form_factor+"</p>"); // '10.0'
+document.write("<p>"+WURFL.complete_device_name+"</p>"); // 'Trident'
 
     </script>
 </body>
